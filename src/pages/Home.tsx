@@ -2,10 +2,8 @@ import { ArrowRight, Download, Sparkles } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import profileImage from "@/assets/gurleen-profile.jpg";
-
 const Home = () => {
-  return (
-    <div className="section-container py-20">
+  return <div className="section-container py-20">
       {/* Hero Section */}
       <div className="grid lg:grid-cols-2 gap-12 items-center min-h-[80vh]">
         {/* Content */}
@@ -31,21 +29,9 @@ const Home = () => {
 
           {/* Skills Tags */}
           <div className="flex flex-wrap gap-3">
-            {[
-              "Adobe Photoshop",
-              "CorelDRAW", 
-              "Illustrator",
-              "Premiere Pro",
-              "AI Tools",
-              "Creative Design"
-            ].map((skill) => (
-              <span
-                key={skill}
-                className="px-4 py-2 bg-primary/10 text-primary rounded-full text-sm font-medium"
-              >
+            {["Adobe Photoshop", "CorelDRAW", "Illustrator", "Premiere Pro", "AI Tools", "Creative Design"].map(skill => <span key={skill} className="px-4 py-2 bg-primary/10 text-primary rounded-full text-sm font-medium">
                 {skill}
-              </span>
-            ))}
+              </span>)}
           </div>
 
           {/* CTA Buttons */}
@@ -67,15 +53,13 @@ const Home = () => {
         {/* Profile Image */}
         <div className="relative flex justify-center lg:justify-end">
           <div className="relative">
-            <div className="absolute -inset-4 bg-gradient-primary rounded-3xl blur-2xl opacity-30 float-animation"></div>
-            <img
-              src={profileImage}
-              alt="Gurleen Singh - Graphic Designer & Video Editor"
-              className="w-80 h-80 lg:w-96 lg:h-96 object-cover rounded-2xl shadow-medium"
-            />
+            
+            
             {/* Floating Elements */}
             <div className="absolute -top-4 -right-4 w-20 h-20 bg-gradient-secondary rounded-full opacity-80 float-animation"></div>
-            <div className="absolute -bottom-4 -left-4 w-16 h-16 bg-gradient-accent rounded-full opacity-70 float-animation" style={{ animationDelay: "2s" }}></div>
+            <div className="absolute -bottom-4 -left-4 w-16 h-16 bg-gradient-accent rounded-full opacity-70 float-animation" style={{
+            animationDelay: "2s"
+          }}></div>
           </div>
         </div>
       </div>
@@ -92,35 +76,27 @@ const Home = () => {
         </div>
 
         <div className="grid md:grid-cols-3 gap-8 stagger-children">
-          {[
-            {
-              title: "Graphic Design",
-              description: "Creating stunning visual identities, posters, and marketing materials that capture attention and communicate effectively.",
-              gradient: "bg-gradient-primary"
-            },
-            {
-              title: "Video Editing",
-              description: "Crafting engaging video content for YouTube and social media with professional editing and creative storytelling.",
-              gradient: "bg-gradient-secondary"
-            },
-            {
-              title: "AI-Enhanced Workflows",
-              description: "Leveraging AI tools like ChatGPT and Perplexity for research, ideation, and optimizing creative processes.",
-              gradient: "bg-gradient-accent"
-            }
-          ].map((service, index) => (
-            <div key={index} className="card-gradient p-8 text-center hover:shadow-medium transition-all duration-300 hover:-translate-y-2">
+          {[{
+          title: "Graphic Design",
+          description: "Creating stunning visual identities, posters, and marketing materials that capture attention and communicate effectively.",
+          gradient: "bg-gradient-primary"
+        }, {
+          title: "Video Editing",
+          description: "Crafting engaging video content for YouTube and social media with professional editing and creative storytelling.",
+          gradient: "bg-gradient-secondary"
+        }, {
+          title: "AI-Enhanced Workflows",
+          description: "Leveraging AI tools like ChatGPT and Perplexity for research, ideation, and optimizing creative processes.",
+          gradient: "bg-gradient-accent"
+        }].map((service, index) => <div key={index} className="card-gradient p-8 text-center hover:shadow-medium transition-all duration-300 hover:-translate-y-2">
               <div className={`w-16 h-16 ${service.gradient} rounded-2xl mx-auto mb-6 flex items-center justify-center`}>
                 <Sparkles className="h-8 w-8 text-white" />
               </div>
               <h4 className="text-xl font-semibold mb-4">{service.title}</h4>
               <p className="text-muted-foreground">{service.description}</p>
-            </div>
-          ))}
+            </div>)}
         </div>
       </div>
-    </div>
-  );
+    </div>;
 };
-
 export default Home;
