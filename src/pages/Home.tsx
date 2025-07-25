@@ -68,13 +68,11 @@ const Home = () => {
         <div className="relative flex justify-center lg:justify-end">
           <div className="relative">
             <div className="absolute -inset-4 bg-gradient-primary rounded-3xl blur-2xl opacity-30 float-animation"></div>
-            <div className="relative card-glass p-4">
-              <img
-                src={profileImage}
-                alt="Gurleen Singh - Graphic Designer & Video Editor"
-                className="w-80 h-80 lg:w-96 lg:h-96 object-cover rounded-2xl shadow-medium"
-              />
-            </div>
+            <img
+              src={profileImage}
+              alt="Gurleen Singh - Graphic Designer & Video Editor"
+              className="w-80 h-80 lg:w-96 lg:h-96 object-cover rounded-2xl shadow-medium"
+            />
             {/* Floating Elements */}
             <div className="absolute -top-4 -right-4 w-20 h-20 bg-gradient-secondary rounded-full opacity-80 float-animation"></div>
             <div className="absolute -bottom-4 -left-4 w-16 h-16 bg-gradient-accent rounded-full opacity-70 float-animation" style={{ animationDelay: "2s" }}></div>
