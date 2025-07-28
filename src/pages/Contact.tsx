@@ -57,8 +57,8 @@ const Contact = () => {
     {
       icon: Phone,
       label: "Reach Me At",
-      value: "📞 +91-79866-89665",
-      href: "tel:+919876543210",
+      value: "+91-79866-89665",
+      href: "tel:+917986689665",
       gradient: "bg-gradient-accent"
     }
   ];
