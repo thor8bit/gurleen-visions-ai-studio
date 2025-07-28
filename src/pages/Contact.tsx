@@ -168,7 +168,7 @@ const Contact = () => {
               <h2 className="text-2xl font-playfair font-semibold">Send a Message</h2>
             </div>
 
-            <form onSubmit={handleSubmit} className="space-y-6">
+            <form onSubmit={handleSubmit} className="space-y-6" netlify >
               <div className="grid sm:grid-cols-2 gap-4">
                 <div>
                   <label htmlFor="name" className="block text-sm font-medium mb-2">
