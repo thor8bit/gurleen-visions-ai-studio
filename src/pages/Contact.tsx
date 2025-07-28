@@ -56,8 +56,8 @@ const Contact = () => {
     },
     {
       icon: Phone,
-      label: "Availability",
-      value: "Open for Projects – 📞 +91-79866-89665",
+      label: "Reach Me At",
+      value: "📞 +91-79866-89665",
       href: "tel:+919876543210",
       gradient: "bg-gradient-accent"
     }
