@@ -6,7 +6,7 @@ const About = () => {
     {
       degree: "BCA (Bachelor of Computer Applications)",
       institution: "Punjab University",
-      year: "Currently pursuing - 2nd Semester",
+      year: "Currently pursuing - 2nd year",
       percentage: "In Progress"
     },
     {
