@@ -1,7 +1,7 @@
 import { ArrowRight, Download, Sparkles } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import profileImage from "@/assets/gurleen-profile.jpg";
+import profileImage from "@/assets/IMG_20250726_214548.png";
 const Home = () => {
   return <div className="section-container py-20">
       {/* Hero Section */}
